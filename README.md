@@ -1,5 +1,3 @@
 # KoSplinter
 
-<p float="left" align="center">
-    <img width="900" src='https://github.com/YunSoungKim/KoSplinter/issues/2#issue-2048878661' />  
-</p>
+![fig2](https://github.com/YunSoungKim/KoSplinter/assets/82452117/eaab23f2-d62b-4aac-b61c-0d675287194c)
