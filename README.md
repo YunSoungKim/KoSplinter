@@ -67,3 +67,11 @@ Splinter는 Question Answering task에서 Fine-tuning을 할 때 위 그림처�
 - Google Cloud Platform의 TPU v2-8을 이용하여 학습했습니다. 약 8일 정도 소요되었습니다.
 
 ## Fine-tuning
+
+- KorQuAD 1.0을 사용했습니다.
+
+- 데이터가 적을 때에도 성능을 확인하기 위해서 Training set에서 크기가 각각 16, 32, 64, 128, 256, 512, 1024인 표본을 무작위로 추출하는 것을 3번 반복했습니다. 그 후 동일한 크기의 Training set으로 학습한 모델을 Dev set으로 평가한 평균 점수를 계산하였습니다.
+
+- 비교 모델로는 KoELECTRA-Base-v3를 사용하였습니다.
+
+- 전체 Training set에 대한 KoELECTRA의 성능은 https://github.com/monologg/KoELECTRA 에 있는 성능 결과를 가져왔습니다.
