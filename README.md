@@ -83,7 +83,8 @@ Splinter는 Question Answering task에서 Fine-tuning을 할 때 위 그림처�
 | `KoELECTRA`  |   EM  | 10.24 | 20.70 | 34.23 | 51.50 | 60.55 | 67.90 | 74.19 | 84.83 |
 |              |   F1  | 20.54 | 36.19 | 47.97 | 66.11 | 74.23 | 80.39 | 85.22 | 93.45 |
 
-![f1](https://github.com/YunSoungKim/KoSplinter/assets/82452117/6824a44d-70ce-414d-9520-5a92dde1fe30)
 
-![em](https://github.com/YunSoungKim/KoSplinter/assets/82452117/0d511069-e491-4ee8-8693-00a5e1dba2fb)
+![f1](https://github.com/YunSoungKim/KoSplinter/assets/82452117/9ccd5588-e874-4855-8fe1-f72666410da7)
+
+![em](https://github.com/YunSoungKim/KoSplinter/assets/82452117/d00bf8c2-776d-40ef-9411-17787a7233a3)
 
