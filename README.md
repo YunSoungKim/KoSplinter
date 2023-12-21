@@ -75,3 +75,6 @@ Splinter는 Question Answering task에서 Fine-tuning을 할 때 위 그림처�
 - 비교 모델로는 KoELECTRA-Base-v3를 사용하였습니다.
 
 - 전체 Training set에 대한 KoELECTRA의 성능은 https://github.com/monologg/KoELECTRA 에 있는 성능 결과를 가져왔습니다.
+
+
+![f1](https://github.com/YunSoungKim/KoSplinter/assets/82452117/6824a44d-70ce-414d-9520-5a92dde1fe30)
