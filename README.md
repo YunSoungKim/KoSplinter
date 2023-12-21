@@ -12,6 +12,8 @@ KoELECTRA처럼 편하게 사용할 수 있게 배포를 하고 싶었지만 Hug
 
 사용하기 조금 불편하더라도 다른 분들께 조금이라도 도움이 될까 싶어 올립니다.
 
+[여기](https://drive.google.com/drive/folders/1_tzp1N32Us18InlEw0ycV7hNqdrY6pbe?usp=drive_link)에서 모델과 데이터를 받으실 수 있습니다.
+
 ## About Splinter
 
 ![fig2](https://github.com/YunSoungKim/KoSplinter/assets/82452117/eaab23f2-d62b-4aac-b61c-0d675287194c)
