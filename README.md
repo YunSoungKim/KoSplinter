@@ -1,20 +1,22 @@
 # KoSplinter
 
-Splinter는 Question Answering에 특화된 모델입니다.
+저는 ESG 데이터에서 성과 평가 자동화를 위해 Question Answering 모델을 만들어야 했고 데이터가 수가 많지 않은 상황이었습니다.
 
-데이터의 수가 적을 때에도 다른 모델에 비해 더 좋은 성능을 보여줍니다.
+그래서 사용할 모델로 Splinter를 선택했고 약 40GB로 사전학습하였습니다.(현재 잘 사용하고 있습니다.)
 
-저는 ESG 데이터에서 성과 평가를 위해 Question Answering 모델을 만들어야 했고 데이터가 수가 많지 않은 상황이었습니다.
-
-그래서 사용할 모델로 Splinter를 선택했고 약 40GB로 사전학습하였습니다.
-
-KoELECTRA처럼 편하게 사용할 수 있게 배포를 하고 싶었지만 Hugging Face에서 지원하는 splinter 모델과 original repository에 있는 모델의 구조가 조금 달라서 구현되어있는 ModelWithQASSHead를 통해 사용해야합니다.
+KoELECTRA처럼 편하게 사용할 수 있게 배포를 하고 싶었지만 Hugging Face에서 지원하는 splinter 모델과 original repository에 있는 모델의 구조가 조금 달라서 구현되어있는 코드를 통해 사용해야합니다.
 
 사용하기 조금 불편하더라도 다른 분들께 조금이라도 도움이 될까 싶어 올립니다.
 
 [여기](https://drive.google.com/drive/folders/1_tzp1N32Us18InlEw0ycV7hNqdrY6pbe?usp=drive_link)에서 모델과 데이터를 받으실 수 있습니다.
 
+감사합니다:)
+
 ## About Splinter
+
+Splinter는 Question Answering에 특화된 모델입니다.
+
+데이터의 수가 적을 때에도 다른 모델에 비해 더 좋은 성능을 보여줍니다.
 
 ![fig2](https://github.com/YunSoungKim/KoSplinter/assets/82452117/eaab23f2-d62b-4aac-b61c-0d675287194c)
 
