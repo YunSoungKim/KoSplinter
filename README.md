@@ -6,7 +6,7 @@ Question Answering Task에서 많은 모델들은 몇 만개의 데이터를 이
 
 이러한 상황에서도 좋은 성능을 내는 모델을 만들기 위해 [Splinter](https://arxiv.org/abs/2101.00438)를 선택하고 original repository에 있는 코드로 사전학습을 진행하였습니다.
 
-[KoELECTRA](https://github.com/monologg/KoELECTRA)처럼 편하게 사용할 수 있게 배포를 하고 싶었지만 Hugging Face에서 지원하는 [splinter](https://huggingface.co/docs/transformers/model_doc/splinter) 모델과 [original repository](https://github.com/oriram/splinter)에 있는 모델의 구조가 조금 달라서 구현되어 있는 코드(finetuning/modeling.py)를 통해 사용해야 합니다.
+[KoELECTRA](https://github.com/monologg/KoELECTRA)처럼 편하게 사용할 수 있게 배포를 하고 싶었지만 Hugging Face에서 지원하는 [Splinter](https://huggingface.co/docs/transformers/model_doc/splinter) 모델과 [original repository](https://github.com/oriram/splinter)에 있는 모델의 구조가 조금 달라서 구현되어 있는 코드(finetuning/modeling.py)를 통해 사용해야 합니다.
 
 사용하기 다소 불편하더라도 다른 분들께 조금이라도 도움이 될까 싶어 올립니다.
 
