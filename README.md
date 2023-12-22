@@ -6,7 +6,7 @@ Question Answering Task에서 많은 모델들은 몇 만개의 데이터를 이
 
 Splinter는 데이터 많지 않을 때에도 좋은 성능을 보여주는 장점이 있습니다.
 
-Kospliter는 [original repository](https://github.com/oriram/splinter)에 있는 코드를 사용해 약 40GB의 한국어 text로 사전학습을 진행하였습니다.
+KoSpliter는 [original repository](https://github.com/oriram/splinter)에 있는 코드를 사용해 약 40GB의 한국어 text로 사전학습을 진행하였습니다.
 
 [KoELECTRA](https://github.com/monologg/KoELECTRA)처럼 편하게 사용할 수 있게 배포를 하고 싶었지만 Hugging Face에서 지원하는 [Splinter](https://huggingface.co/docs/transformers/model_doc/splinter) 모델과 [original repository](https://github.com/oriram/splinter)에 있는 모델의 구조가 조금 달라서 구현되어 있는 코드(finetuning/modeling.py)를 통해 사용해야 합니다.
 
