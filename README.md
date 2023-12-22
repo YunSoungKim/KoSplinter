@@ -14,7 +14,7 @@ KoELECTRA처럼 편하게 사용할 수 있게 배포를 하고 싶었지만 Hug
 
 ## About Splinter
 
-Splinter는 Question Answering에 특화된 BERT 기반반 모델입니다.
+Splinter는 Question Answering에 특화된 BERT 기반 모델입니다.
 
 데이터의 수가 적을 때에도 다른 모델에 비해 더 좋은 성능을 보여줍니다.
 
