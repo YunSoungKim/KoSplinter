@@ -14,7 +14,7 @@ KoELECTRA처럼 편하게 사용할 수 있게 배포를 하고 싶었지만 Hug
 
 ## About Splinter
 
-Splinter는 Question Answering에 특화된 모델입니다.
+Splinter는 Question Answering에 특화된 BERT 기반반 모델입니다.
 
 데이터의 수가 적을 때에도 다른 모델에 비해 더 좋은 성능을 보여줍니다.
 
@@ -61,6 +61,8 @@ Splinter는 Question Answering task에서 Fine-tuning을 할 때 위 그림처�
 - 대규모 구매도서 기반 한국어 말뭉치 데이터
 
 ### Details
+
+- 약 40GB를 사용했습니다.
 
 - 마스킹할 때 이전 말뭉치들에서 사용한 구간은 다시 사용하지 않았습니다.
 
