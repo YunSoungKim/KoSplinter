@@ -6,7 +6,7 @@ Question Answering Task에서 많은 모델들은 몇 만개의 데이터를 이
 
 이러한 상황에서도 좋은 성능을 내는 모델을 만들기 위해 Splinter를 선택하고 original repository에 있는 코드로 사전학습을 진행하였습니다.
 
-KoELECTRA처럼 편하게 사용할 수 있게 배포를 하고 싶었지만 Hugging Face에서 지원하는 splinter 모델과 original repository에 있는 모델의 구조가 조금 달라서 구현되어 있는 코드(finetuning/modeling.py)를 통해 사용해야 합니다.
+[KoELECTRA](https://github.com/monologg/KoELECTRA)처럼 편하게 사용할 수 있게 배포를 하고 싶었지만 Hugging Face에서 지원하는 splinter 모델과 original repository에 있는 모델의 구조가 조금 달라서 구현되어 있는 코드(finetuning/modeling.py)를 통해 사용해야 합니다.
 
 사용하기 다소 불편하더라도 다른 분들께 조금이라도 도움이 될까 싶어 올립니다.
 
@@ -28,7 +28,7 @@ KoELECTRA처럼 편하게 사용할 수 있게 배포를 하고 싶었지만 Hug
 
 ![fig3](https://github.com/YunSoungKim/KoSplinter/assets/82452117/33ab154c-e730-4b8e-9626-fe86ba1fce33)
 
-Splinter는 Question Answering task에서 Fine-tuning을 할 때 위 그림처럼 질문 뒤에 [QUESTION] 토큰을 추가합니다.
+[Splinter](https://arxiv.org/abs/2101.00438)는 Question Answering task에서 Fine-tuning을 할 때 위 그림처럼 질문 뒤에 [QUESTION] 토큰을 추가합니다.
 
 사전학습과 Fine-tuning에서의 학습방법이 동일한 Splinter는 Question Answering에서 좋은 성능을 보여주며 데이터가 적을 때에 다른 모델들에 비해 더 좋은 성능을 보여줍니다.
 
@@ -68,9 +68,9 @@ Splinter는 Question Answering task에서 Fine-tuning을 할 때 위 그림처�
 
 - 마스킹할 때 [Splinter](https://arxiv.org/abs/2101.00438)에 있는 4가지 구문에 대한 정의를 사용하고 추가로 이전 말뭉치들에서 사용한 구간은 다시 사용하지 않았습니다.
 
-- KoELECTRA의 vocabulary를 사용했습니다.
+- [KoELECTRA](https://github.com/monologg/KoELECTRA)의 vocabulary를 사용했습니다.
 
-- Train steps는 4.5M이며 그 외 Hyperparameter는 Splinter 논문과 동일합니다.
+- Train steps는 4.5M이며 그 외 Hyperparameter는 [Splinter](https://arxiv.org/abs/2101.00438) 논문과 동일합니다.
 
 - Google Cloud Platform의 TPU v2-8을 이용하여 학습했습니다. 약 8일 정도 소요되었습니다.
 
@@ -80,7 +80,7 @@ Splinter는 Question Answering task에서 Fine-tuning을 할 때 위 그림처�
 
 - 데이터가 적을 때에도 성능을 확인하기 위해서 Training set에서 크기가 각각 16, 32, 64, 128, 256, 512, 1024인 표본을 무작위로 추출하는 것을 3번 반복했습니다. 그 후 동일한 크기의 Training set으로 학습한 모델을 Dev set으로 평가한 평균 점수를 계산하였습니다.
 
-- 비교 모델로는 KoELECTRA-Base-v3를 사용하였습니다.
+- 비교 모델로는 [KoELECTRA-Base-v3](https://github.com/monologg/KoELECTRA)를 사용하였습니다.
 
 - 전체 Training set에 대한 KoELECTRA의 성능은 https://github.com/monologg/KoELECTRA 에 있는 성능 결과를 가져왔습니다.
 
