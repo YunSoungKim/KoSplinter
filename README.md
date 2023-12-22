@@ -2,9 +2,11 @@
 
 Question Answering Task에서 많은 모델들은 몇 만개의 데이터를 이용해 Fine-tuning하여 좋은 성능을 내고 있습니다.
 
-하지만 실제 업무에 활용하기 위해  질문답변 형식으로 몇 만개의 데이터를 레이블링 하는 것은 현실적으로 어려운 일입니다. 
+하지만 실제 업무에서는  질문답변 형식으로 몇 만개의 데이터를 레이블링 하는 것이 현실적으로 어렵습니다.
 
-이러한 상황에서도 좋은 성능을 내는 모델을 만들기 위해 [Splinter](https://arxiv.org/abs/2101.00438)를 선택하고 original repository에 있는 코드로 사전학습을 진행하였습니다.
+Splinter는 데이터 많지 않을 때에도 좋은 성능을 보여주는 장점이 있습니다.
+
+Kospliter는 [original repository](https://github.com/oriram/splinter)에 있는 코드를 사용해 약 40GB의 한국어 text로 사전학습을 진행하였습니다.
 
 [KoELECTRA](https://github.com/monologg/KoELECTRA)처럼 편하게 사용할 수 있게 배포를 하고 싶었지만 Hugging Face에서 지원하는 [Splinter](https://huggingface.co/docs/transformers/model_doc/splinter) 모델과 [original repository](https://github.com/oriram/splinter)에 있는 모델의 구조가 조금 달라서 구현되어 있는 코드(finetuning/modeling.py)를 통해 사용해야 합니다.
 
@@ -66,7 +68,7 @@ Question Answering Task에서 많은 모델들은 몇 만개의 데이터를 이
 
 - 약 40GB를 사용했습니다.
 
-- 마스킹할 때 [Splinter](https://arxiv.org/abs/2101.00438)에 있는 4가지 구문에 대한 정의를 사용하고 추가로 이전 말뭉치들에서 사용한 구간은 다시 사용하지 않았습니다.
+- 마스킹할 때 [Splinter](https://arxiv.org/abs/2101.00438)에 있는 구문에 대한 4가지 정의를 사용하고 추가로 이전 말뭉치들에서 사용한 구간은 다시 사용하지 않았습니다.
 
 - [KoELECTRA](https://github.com/monologg/KoELECTRA)의 vocabulary를 사용했습니다.
 
@@ -91,11 +93,4 @@ Question Answering Task에서 많은 모델들은 몇 만개의 데이터를 이
 | `KoELECTRA`  |   EM  | 10.24 | 20.70 | 34.23 | 51.50 | 60.55 | 67.90 | 74.19 | 84.83 |
 |              |   F1  | 20.54 | 36.19 | 47.97 | 66.11 | 74.23 | 80.39 | 85.22 | 93.45 |
 
-
-| Model        |       | 16    | 32    | 64    | 128   | 256   | 512   | 1024  | Full  |
-|:-------------|:------|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
-| `KoSplinter` |   EM  | 33.67 | 49.71 | 59.60 | 67.49 | 72.51 | 76.86 | 79.47 | 86.16 |
-| `KoELECTRA`  |   EM  | 10.24 | 20.70 | 34.23 | 51.50 | 60.55 | 67.90 | 74.19 | 84.83 |
-| `KoSplinter` |   F1  | 46.22 | 63.38 | 72.77 | 80.64 | 84.48 | 87.88 | 89.91 | 94.34 |
-| `KoELECTRA`  |   F1  | 20.54 | 36.19 | 47.97 | 66.11 | 74.23 | 80.39 | 85.22 | 93.45 |
 
