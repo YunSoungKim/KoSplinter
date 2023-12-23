@@ -32,13 +32,6 @@ flags = tf.flags
 
 FLAGS = flags.FLAGS
 
-# defined_twice = ['input_file','output_dir',"vocab_file","do_lower_case","do_whole_word_mask",
-#           "recurring_span_selection", "max_questions_per_seq","only_recurring_span_selection",
-#           "max_seq_length", "max_predictions_per_seq", "random_seed", "num_processes","dupe_factor",
-#           "masked_lm_prob","geometric_masking_p","max_span_length","verbose"]
-# for name in defined_twice:
-#       delattr(flags.FLAGS,name)
-
 flags.DEFINE_string("input_file", None,
                     "Input raw text file (or comma-separated list of files).",allow_override=True)
 
