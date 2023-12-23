@@ -1,5 +1,7 @@
 # Splinter
 
+ https://github.com/oriram/splinter original repository링크입니다.
+
 This repository contains the code, models and datasets discussed in our paper "[Few-Shot Question Answering by Pretraining Span Selection](https://arxiv.org/abs/2101.00438)", to appear at ACL 2021.
 
 Our pretraining code is based on TensorFlow (checked on 1.15), while fine-tuning is based on PyTorch (1.7.1) and 
