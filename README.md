@@ -72,6 +72,8 @@ KoSpliter는 [original repository](https://github.com/oriram/splinter)에 있는
 
 - [KoELECTRA](https://github.com/monologg/KoELECTRA)의 vocabulary를 사용했습니다.
 
+- Params : 110M
+
 - Train steps는 4.5M이며 그 외 Hyperparameter는 [Splinter](https://arxiv.org/abs/2101.00438) 논문과 동일합니다.
 
 - Google Cloud Platform의 TPU v2-8을 이용하여 학습했습니다. 약 8일 정도 소요되었습니다.
